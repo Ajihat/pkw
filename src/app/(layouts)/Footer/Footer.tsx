@@ -33,13 +33,13 @@ export const Footer = () => {
 					<div className={styles.bottom}>
 						<div className={styles.left}>
 							<a>
-								<FaFacebookF size={15} />
+								<FaFacebookF size={20} />
 							</a>
 							<a>
-								<LuInstagram size={15} />
+								<LuInstagram size={20} />
 							</a>
 							<a>
-								<FaYoutube size={15} />
+								<FaYoutube size={20} />
 							</a>
 						</div>
 						<div className={styles.right}>{`© ${currentYear} — All Rights Reserved`}</div>

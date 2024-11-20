@@ -43,6 +43,10 @@ export const Portfolio = () => {
 									backgroundImage: `url(${item.imageSrc})`,
 								}}
 							></div>
+							<div className='content'>
+								<p>{item.date}</p>
+								<h3>{item.header}</h3>
+							</div>
 							<Plus />
 						</div>
 					);

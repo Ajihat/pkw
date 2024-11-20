@@ -46,11 +46,8 @@ html, body {
 
 .portfolioSlider .item {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background-color: #f0f0f0;
-    text-align: center;
     aspect-ratio: 801/597;
     border-radius: 30px;
     overflow: hidden;
@@ -61,6 +58,10 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.portfolioSlider .content {
+    padding: 5% 80px 0px 40px;
 }
 
 .portfolioSlider .slick-prev {
