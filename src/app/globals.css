@@ -45,6 +45,7 @@ html, body {
 
 
 .portfolioSlider .item {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

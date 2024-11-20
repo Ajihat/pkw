@@ -1,5 +1,6 @@
 'use client';
 import { Heading } from '@/app/(components)/Heading/Heading';
+import { Plus } from '@/app/(components)/Plus/Plus';
 
 import { portfolioData } from '@/app/(data)/portfolioData';
 
@@ -24,6 +25,7 @@ export const Portfolio = () => {
 				breakpoint: 768, // Dla urządzeń o szerokości poniżej 768px
 				settings: {
 					slidesToShow: 1, // Pokaż 1 element na mniejszych ekranach
+					slidesToScroll: 1,
 				},
 			},
 		],
@@ -41,6 +43,7 @@ export const Portfolio = () => {
 									backgroundImage: `url(${item.imageSrc})`,
 								}}
 							></div>
+							<Plus />
 						</div>
 					);
 				})}
