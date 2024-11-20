@@ -1,0 +1,98 @@
+:root {
+    --white-color:#FFFFFF;
+    --background-green: #749D81;
+    --dark-green: #5D896B;
+    --primary-green: #70A480;
+
+    --text-dark: #51495F;
+
+    --breakpoint-mobile: 680px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--background-green);
+    overflow-x: hidden;
+}
+
+
+/* SLIDER PORTFOLIO */
+.portfolioSlider {
+
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.portfolioSlider .slick-slide {
+    padding: 0 30px;
+}
+
+
+.portfolioSlider .slick-list {
+    margin: 0 -30px;
+    overflow: hidden;
+}
+
+
+
+
+
+.portfolioSlider .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    text-align: center;
+    aspect-ratio: 801/597;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.portfolioSlider .img {
+    aspect-ratio: 801/446;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolioSlider .slick-prev {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    background-color: var(--dark-green) !important;
+    border-radius: 50%;
+    transform: translate(-110%,50%);
+    top: initial;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.portfolioSlider .slick-next {
+    position: absolute;
+    bottom: 45px;
+    right: 50%;
+    transform: translate(110%,50%);
+    top: initial;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark-green) !important;
+    
+}
+.portfolioSlider .slick-next:hover {
+    background-color: var(--dark-green);
+}
+
+.portfolioSlider .slick-prev:hover {
+    background-color: var(--dark-green);
+}
+
+

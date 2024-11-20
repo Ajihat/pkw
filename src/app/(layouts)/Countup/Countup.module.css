@@ -1,0 +1,46 @@
+.container {
+    width: 100%
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 139px;
+    background-color: var(--dark-green);
+    padding: 40px 0
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.line {
+    width: 2px;
+    background-color: var(--white-color);
+    height: 66px
+}
+
+.counter {
+    text-align: center;
+    font-size: 100px;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    min-width: 255px;
+}
+
+.text {
+    font-size: 22px;
+    color: var(--white-color);
+    letter-spacing: .6px;
+    text-align: center;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+}

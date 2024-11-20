@@ -1,0 +1,19 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    color: var(--dark-green);
+    cursor: pointer;
+    border-radius: 40px;
+    border: 1px solid var(--white-color);
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    transition: .3s;
+    
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--white-color)
+}

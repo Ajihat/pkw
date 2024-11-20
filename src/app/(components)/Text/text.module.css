@@ -1,0 +1,6 @@
+.text {
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    /* font-family: var(--font-roboto); */
+    font-size: 60px;
+}

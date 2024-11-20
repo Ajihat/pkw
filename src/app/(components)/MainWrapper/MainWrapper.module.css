@@ -1,0 +1,20 @@
+.wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    margin: 156px auto 0  auto;
+    padding: 0 7%;
+
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        margin: 130px auto 0  auto;
+    }
+ }
+
+@media (max-width: 690px) {
+    .wrapper {
+        padding: 0 30px;
+
+    }
+}
