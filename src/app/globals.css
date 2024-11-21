@@ -27,11 +27,20 @@ html, body {
 .portfolioSlider {
 
     position: relative;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
 }
 
 .portfolioSlider .slick-slide {
     padding: 0 30px;
+    height: auto;
+}
+
+.portfolioSlider .slick-slide > div {
+    height: 100%;
+}
+.portfolioSlider .slick-track {
+    display: flex;
+    align-items: stretch;
 }
 
 
@@ -43,7 +52,7 @@ html, body {
 .portfolioSlider .item {
     position: relative;
     background-color: #f0f0f0;
-    aspect-ratio: 801/597;
+    height: 100%;
     border-radius: 30px;
     overflow: hidden;
    
@@ -54,15 +63,16 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 30px;
 }
 
 .portfolioSlider .content {
-    padding: 4% 80px 0px 40px;
+    padding: 40px 80px 40px 40px;
 }
 
 .portfolioSlider .slick-prev {
     position: absolute;
-    bottom: 45px;
+    bottom: 60px;
     left: 50%;
     background-color: var(--dark-green) !important;
     border-radius: 50%;
@@ -70,12 +80,18 @@ html, body {
     top: initial;
     width: 50px;
     height: 50px;
+    background-image: url('../../public/arrow-left.svg'); /* Ścieżka do ikony */
+    background-size: 20%; /* Dopasowanie rozmiaru ikony */
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
+
+
 .portfolioSlider .slick-next {
     position: absolute;
-    bottom: 45px;
+    bottom: 60px;
     right: 50%;
     transform: translate(110%,50%);
     top: initial;
@@ -83,14 +99,50 @@ html, body {
     height: 50px;
     border-radius: 50%;
     background-color: var(--dark-green) !important;
+    background-image: url('../../public/arrow-right.svg'); /* Ścieżka do ikony */
+    background-size: 20%; /* Dopasowanie rozmiaru ikony */
+    background-position: center;
+    background-repeat: no-repeat;
     
+}
+.portfolioSlider .slick-prev:before {
+    display: none;
+    content: '';
+}
+.portfolioSlider .slick-next:before {
+    display: none;
+    content: '';
 }
 .portfolioSlider .slick-next:hover {
     background-color: var(--dark-green);
+    background-image: url('/arrow-next.svg') !important;
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .portfolioSlider .slick-prev:hover {
     background-color: var(--dark-green);
+    background-image: url('/arrow-left.svg')!important; 
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolioSlider .slick-next:active {
+    background-color: var(--dark-green); 
+    background-image: url('/arrow-next.svg')!important; 
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolioSlider .slick-prev:active {
+    background-color: var(--dark-green); 
+    background-image: url('/arrow-left.svg')!important; 
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .portfolioSlider .text {
@@ -113,9 +165,8 @@ html, body {
 }
 
 @media (max-width: 800px) { 
-    .portfolioSlider .item {
-        aspect-ratio: 549/564;
-        
+    .portfolioSlider .content {
+        padding: 20px 60px 20px 40px;
     }
     .portfolioSlider .img {
         aspect-ratio: 549/446;

@@ -56,6 +56,12 @@
   transform-origin: center;
 }
 
+@media (max-width: 1700px) {
+    .secondHeading {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
 
 @media (max-width: 1300px) { /* Wartość breakpointu wpisana ręcznie */
    .wrapper {
