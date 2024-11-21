@@ -9,7 +9,7 @@ import styles from './Footer.module.css';
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id='footer'>
 			<div className={styles.inner}>
 				<div className={styles.content}>
 					<h2 className={styles.heading}>Chcesz dowiedzieć się więcej o naszych produktach i usługach?</h2>

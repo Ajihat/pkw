@@ -6,16 +6,26 @@ import { FaFacebookF } from 'react-icons/fa6';
 import { LuInstagram } from 'react-icons/lu';
 import { FaYoutube } from 'react-icons/fa';
 
-export const MobileMenu = ({ isMenuOpen }: MobileMenuTypes) => {
+import { scrollToDiv } from '@/app/(utils)/navigate';
+
+export const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuTypes) => {
 	return (
 		<div className={`${styles.mobileMenu} ${isMenuOpen ? styles.menuOpen : styles.menuClosed}`}>
 			<div className={styles.top}>
 				<nav className={styles.nav}>
 					<ul className={styles.list}>
-						<li className={styles.menuLink}>O firmie</li>
-						<li className={styles.menuLink}>Oferta</li>
-						<li className={styles.menuLink}>Portfolio</li>
-						<li className={styles.menuLink}>Aktualności</li>
+						<li onClick={() => scrollToDiv('about', setIsMenuOpen)} className={styles.menuLink}>
+							O firmie
+						</li>
+						<li onClick={() => scrollToDiv('offer', setIsMenuOpen)} className={styles.menuLink}>
+							Oferta
+						</li>
+						<li onClick={() => scrollToDiv('portfolio', setIsMenuOpen)} className={styles.menuLink}>
+							Portfolio
+						</li>
+						<li onClick={() => scrollToDiv('about', setIsMenuOpen)} className={styles.menuLink}>
+							Aktualności
+						</li>
 					</ul>
 				</nav>
 			</div>

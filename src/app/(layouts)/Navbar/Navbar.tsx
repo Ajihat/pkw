@@ -9,6 +9,8 @@ import { MobileMenu } from '@/app/(components)/MobileMenu/MobileMenu';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RiCloseLargeFill } from 'react-icons/ri';
 
+import { scrollToDiv } from '@/app/(utils)/navigate';
+
 import styles from './Navbar.module.css';
 
 export const Navbar = () => {
@@ -20,18 +22,29 @@ export const Navbar = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.inner}>
 				<div className={styles.logoWrapper}>
-					<Image src='/logo.jpg' layout='responsive' width={251} height={96} alt='PKW logo' />
+					<Image src='/logo.svg' layout='responsive' width={251} height={96} alt='PKW logo' />
 				</div>
 				<nav className={styles.nav}>
 					<ul className={styles.list}>
-						<li className={styles.listItem}>O Firmie</li>
-						<li className={styles.listItem}>Oferta</li>
-						<li className={styles.listItem}>Portfolio</li>
+						<li onClick={() => scrollToDiv('about')} className={styles.listItem}>
+							O Firmie
+						</li>
+						<li onClick={() => scrollToDiv('offer')} className={styles.listItem}>
+							Oferta
+						</li>
+						<li onClick={() => scrollToDiv('portfolio')} className={styles.listItem}>
+							Portfolio
+						</li>
 						<li className={styles.listItem}>Aktualności</li>
 					</ul>
 				</nav>
 				<div className={styles.btnHolder}>
-					<TransparentButton text='Kontakt' width='174px' height='60px' />
+					<TransparentButton
+						onClick={() => scrollToDiv('footer')}
+						text='Kontakt'
+						width='174px'
+						height='60px'
+					/>
 				</div>
 				<div onClick={handleClick} className={styles.hamburger}>
 					{isMenuOpen ? (
@@ -41,7 +54,7 @@ export const Navbar = () => {
 					)}
 				</div>
 			</div>
-			<MobileMenu isMenuOpen={isMenuOpen} />
+			<MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 		</div>
 	);
 };

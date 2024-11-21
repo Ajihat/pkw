@@ -7,7 +7,7 @@ import styles from './Offer.module.css';
 
 export const Offer = () => {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id='offer'>
 			<div className={styles.inner}>
 				<Heading
 					paragraphText='Oferujemy szeroki wachlarz produktów.'

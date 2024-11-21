@@ -6,7 +6,7 @@ import styles from './About.module.css';
 
 export const About = () => {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id='about'>
 			<div className={styles.inner}>
 				<div className={styles.left}>
 					<Image fill src='/ecology.png' alt='Ekologia' className={styles.image} />

@@ -40,17 +40,13 @@ html, body {
     overflow: hidden;
 }
 
-
-
-
-
 .portfolioSlider .item {
     position: relative;
-
     background-color: #f0f0f0;
     aspect-ratio: 801/597;
     border-radius: 30px;
     overflow: hidden;
+   
 }
 .portfolioSlider .img {
     aspect-ratio: 801/446;
@@ -61,7 +57,7 @@ html, body {
 }
 
 .portfolioSlider .content {
-    padding: 5% 80px 0px 40px;
+    padding: 4% 80px 0px 40px;
 }
 
 .portfolioSlider .slick-prev {
@@ -95,6 +91,35 @@ html, body {
 
 .portfolioSlider .slick-prev:hover {
     background-color: var(--dark-green);
+}
+
+.portfolioSlider .text {
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    letter-spacing: .48px;
+    line-height: 26px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.portfolioSlider .details {
+    font-size: 20px;
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    letter-spacing: .6px;
+    line-height: 30px;
+    color: var(--text-dark);
+}
+
+@media (max-width: 800px) { 
+    .portfolioSlider .item {
+        aspect-ratio: 549/564;
+        
+    }
+    .portfolioSlider .img {
+        aspect-ratio: 549/446;
+    }
 }
 
 

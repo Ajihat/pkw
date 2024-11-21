@@ -22,7 +22,7 @@ export const Portfolio = () => {
 
 		responsive: [
 			{
-				breakpoint: 768, // Dla urządzeń o szerokości poniżej 768px
+				breakpoint: 800, // Dla urządzeń o szerokości poniżej 768px
 				settings: {
 					slidesToShow: 1, // Pokaż 1 element na mniejszych ekranach
 					slidesToScroll: 1,
@@ -31,7 +31,7 @@ export const Portfolio = () => {
 		],
 	};
 	return (
-		<div className={styles.sliderContainer}>
+		<div className={styles.sliderContainer} id='portfolio'>
 			<Heading paragraphText='Portfolio' headingText='Portfolio' />
 			<Slider {...settings} className='portfolioSlider'>
 				{portfolioData.map((item) => {
@@ -44,8 +44,8 @@ export const Portfolio = () => {
 								}}
 							></div>
 							<div className='content'>
-								<p>{item.date}</p>
-								<h3>{item.header}</h3>
+								<p className='text'>{item.date}</p>
+								<h3 className='details'>{item.header}</h3>
 							</div>
 							<Plus />
 						</div>
