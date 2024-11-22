@@ -80,10 +80,10 @@ html, body {
     top: initial;
     width: 50px;
     height: 50px;
-    background-image: url('../../public/arrow-left.svg'); /* Ścieżka do ikony */
-    background-size: 20%; /* Dopasowanie rozmiaru ikony */
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../../public/arrow-left.svg') !important; /* Ścieżka do ikony */
+    background-size: 20% !important; /* Dopasowanie rozmiaru ikony */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     
 }
 
@@ -99,50 +99,54 @@ html, body {
     height: 50px;
     border-radius: 50%;
     background-color: var(--dark-green) !important;
-    background-image: url('../../public/arrow-right.svg'); /* Ścieżka do ikony */
-    background-size: 20%; /* Dopasowanie rozmiaru ikony */
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../../public/arrow-right.svg') !important; 
+    background-size: 20% !important; /* Dopasowanie rozmiaru ikony */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     
 }
 .portfolioSlider .slick-prev:before {
-    display: none;
-    content: '';
+    display: none !important;
+    content: '' !important;
 }
 .portfolioSlider .slick-next:before {
-    display: none;
-    content: '';
+    display: none !important;
+    content: '' !important;
 }
 .portfolioSlider .slick-next:hover {
-    background-color: var(--dark-green);
+    background-color: var(--dark-green) !important;
     background-image: url('/arrow-next.svg') !important;
-    background-size: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 20% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
 }
 
 .portfolioSlider .slick-prev:hover {
-    background-color: var(--dark-green);
+    background-color: var(--dark-green) !important;
     background-image: url('/arrow-left.svg') !important; 
-    background-size: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 20% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
 }
 
 .portfolioSlider .slick-next:active {
-    background-color: var(--dark-green); 
+    background-color: var(--dark-green) !important; 
     background-image: url('/arrow-next.svg') !important; 
-    background-size: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 20% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
 }
 
 .portfolioSlider .slick-prev:active {
-    background-color: var(--dark-green); 
+    background-color: var(--dark-green) !important; 
     background-image: url('/arrow-left.svg') !important; 
-    background-size: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 20% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
 }
 
 .portfolioSlider .text {
