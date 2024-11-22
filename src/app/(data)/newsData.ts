@@ -15,14 +15,14 @@ export const newsData = [
 	},
 	{
 		id: 3,
-		imageSrc: './news/news1.png',
+		imageSrc: './news/news4.png',
 		header: 'Lorem Ipsum Dolor It',
 		subHeader: 'UX/UI Design',
 		content: 'asasd',
 	},
 	{
 		id: 4,
-		imageSrc: './news/news2.png',
+		imageSrc: './news/news4.png',
 		header: 'Lorem Ipsum Dolor It',
 		subHeader: 'UX/UI Design',
 		content: 'asasd',

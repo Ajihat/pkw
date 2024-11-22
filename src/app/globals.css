@@ -123,7 +123,7 @@ html, body {
 
 .portfolioSlider .slick-prev:hover {
     background-color: var(--dark-green);
-    background-image: url('/arrow-left.svg')!important; 
+    background-image: url('/arrow-left.svg') !important; 
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ html, body {
 
 .portfolioSlider .slick-next:active {
     background-color: var(--dark-green); 
-    background-image: url('/arrow-next.svg')!important; 
+    background-image: url('/arrow-next.svg') !important; 
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ html, body {
 
 .portfolioSlider .slick-prev:active {
     background-color: var(--dark-green); 
-    background-image: url('/arrow-left.svg')!important; 
+    background-image: url('/arrow-left.svg') !important; 
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
