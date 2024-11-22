@@ -15,7 +15,7 @@ export const newsData = [
 	},
 	{
 		id: 3,
-		imageSrc: './news/news4.png',
+		imageSrc: './news/news3.png',
 		header: 'Lorem Ipsum Dolor It',
 		subHeader: 'UX/UI Design',
 		content: 'asasd',
