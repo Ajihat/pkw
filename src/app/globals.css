@@ -27,7 +27,7 @@ html, body {
 .portfolioSlider {
 
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .portfolioSlider .slick-slide {
@@ -72,7 +72,7 @@ html, body {
 
 .portfolioSlider .slick-prev {
     position: absolute;
-    bottom: 0px;
+    bottom: 60px;
     left: 50%;
     background-color: var(--dark-green) !important;
     border-radius: 50%;
@@ -91,7 +91,7 @@ html, body {
 
 .portfolioSlider .slick-next {
     position: absolute;
-    bottom: 0px;
+    bottom: 60px;
     right: 50%;
     transform: translate(110%,50%);
     top: initial;
