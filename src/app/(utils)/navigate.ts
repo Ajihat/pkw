@@ -6,7 +6,7 @@ export function scrollToDiv(divId: string, setIsMenuOpen?: Dispatch<SetStateActi
 	if (targetElement) {
 		targetElement.scrollIntoView({
 			behavior: 'smooth',
-			block: 'start',
+			block: 'center',
 		});
 		if (setIsMenuOpen) {
 			setIsMenuOpen(false);

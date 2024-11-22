@@ -4,7 +4,7 @@
 
 .wrapper {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1350px;
     margin: 0 auto;
     border-radius: 139px;
     background-color: var(--dark-green);
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
 }
 
