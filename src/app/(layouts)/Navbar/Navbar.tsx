@@ -35,7 +35,9 @@ export const Navbar = () => {
 						<li onClick={() => scrollToDiv('portfolio')} className={styles.listItem}>
 							Portfolio
 						</li>
-						<li className={styles.listItem}>Aktualności</li>
+						<li onClick={() => scrollToDiv('news')} className={styles.listItem}>
+							Aktualności
+						</li>
 					</ul>
 				</nav>
 				<div className={styles.btnHolder}>

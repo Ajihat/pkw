@@ -44,7 +44,7 @@ export const News = () => {
 		],
 	};
 	return (
-		<div className={styles.sliderContainer} id='portfolio'>
+		<div className={styles.sliderContainer} id='news'>
 			<Heading paragraphText='Nasze ostatnie realizacje' headingText='Aktualności' />
 			<Slider {...settings} className='portfolioSlider'>
 				{newsData.map((item) => {
