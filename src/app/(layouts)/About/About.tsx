@@ -19,7 +19,8 @@ export const About = () => {
 					<p className={styles.text}>
 						W PKW Engineering łączymy profesjonalizm z innowacją, dostarczając kompleksowe rozwiązania
 						technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, oferując
-						produkty takie jak agregaty kogeneracyjne, mikrobiogazownie, magazyny energii i wody.
+						produkty takie jak agregaty kogeneracyjne, mikrobiogazownie, magazyny energii elektrycznej,
+						chłodniczej oraz cieplnej.
 					</p>
 					<p className={styles.text}>
 						Naszym celem jest rozwój odnawialnych źródeł energii i technologii, które wspierają zrównoważony

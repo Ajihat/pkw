@@ -5,7 +5,8 @@ import { Countup } from './(layouts)/Countup/Countup';
 import { Portfolio } from './(layouts)/Portfolio/Portfolio';
 import { About } from './(layouts)/About/About';
 import { Offer } from './(layouts)/Offer/Offer';
-import { Brands } from './(layouts)/Brands/Brands';
+// import { Brands } from './(layouts)/Brands/Brands';
+import { News } from './(layouts)/News/News';
 //components
 import { MainWrapper } from './(components)/MainWrapper/MainWrapper';
 import { ContentWrapper } from './(components)/ContentWrapper/ContentWrapper';
@@ -18,11 +19,12 @@ export default function Home() {
 			<MainWrapper>
 				<ContentWrapper>
 					<Hero />
-					<Brands />
+					{/* <Brands /> */}
 					<Countup />
 					<About />
 					<Offer />
 					<Portfolio />
+					<News />
 				</ContentWrapper>
 			</MainWrapper>
 			<Footer />

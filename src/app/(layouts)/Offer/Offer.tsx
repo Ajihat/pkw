@@ -19,8 +19,8 @@ export const Offer = () => {
 							<Image src='./offer1.svg' fill alt='Agregaty Kogeneracyjne Chp' className={styles.img} />
 						</div>
 						<div className={styles.right}>
-							<h4 className={styles.heading}>Agregaty Kogeneracyjne Chp</h4>
-							<p className={styles.text}>kogeneracja energii cieplnej i elektrycznej</p>
+							<h4 className={styles.heading}>Agregaty Kogeneracyjne CHP</h4>
+							<p className={styles.text}>wspólne wytwarzanie energii cieplnej i elektrycznej</p>
 						</div>
 						<Plus />
 					</div>
@@ -45,7 +45,7 @@ export const Offer = () => {
 						</div>
 						<div className={styles.right}>
 							<h4 className={styles.heading}>Magazyny Energii Elektroenergetycznej</h4>
-							<p className={styles.text}>Cieplnej i chłodniczej</p>
+							<p className={styles.text}>cieplnej i chłodniczej</p>
 						</div>
 						<Plus />
 					</div>
