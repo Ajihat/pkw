@@ -67,12 +67,13 @@
     .image {
         transform: scale(1.6);
     }
+    .wrapper {
+        padding-top: 100px;
+       }
 }
 
 @media (max-width: 1300px) { /* Wartość breakpointu wpisana ręcznie */
-   .wrapper {
-    padding-top: 100px;
-   }
+
    .image {
     transform: scale(1.4);
 }
