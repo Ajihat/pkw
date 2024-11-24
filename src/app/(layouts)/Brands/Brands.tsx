@@ -31,6 +31,13 @@ export const Brands = () => {
 					slidesToScroll: 3,
 				},
 			},
+			{
+				breakpoint: 390, // Dla urządzeń o szerokości poniżej 768px
+				settings: {
+					slidesToShow: 2, // Pokaż 1 element na mniejszych ekranach
+					slidesToScroll: 2,
+				},
+			},
 		],
 	};
 	return (
