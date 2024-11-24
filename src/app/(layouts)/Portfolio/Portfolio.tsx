@@ -33,7 +33,7 @@ export const Portfolio = () => {
 	return (
 		<div className={styles.sliderContainer} id='portfolio'>
 			<Heading paragraphText='Portfolio' headingText='Portfolio' />
-			<Slider {...settings} className='portfolioSlider'>
+			<Slider {...settings} className='newsSlider'>
 				{portfolioData.map((item) => {
 					return (
 						<div key={item.id} className='item'>
