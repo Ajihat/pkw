@@ -55,6 +55,7 @@ html, body {
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
+    cursor: pointer;
    
 }
 .portfolioSlider .img {
@@ -275,6 +276,74 @@ html, body {
     }
 }
 
+/* 
+POPUP CONTENT */
 
+.content .mainHeader {
+    font-size: 40px;
+    color: #272526;
+    line-height: 47px;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content .bold {
+    font-size: 24px;
+    line-height: 28px;
+    color: #272526;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.content .normal {
+    font-size: 18px;
+    line-height: 20px;
+    color: #272526;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content .paragraphStart {
+    font-size: 18px;
+    line-height: 20px;
+    color: #272526;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content .list {
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.content .list li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #272526;
+    font-family: var(--font-roboto);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .content .mainHeader {
+        font-size: 30px;
+    line-height: 35px;
+    }
+    .content .bold {
+        font-size:18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    }
+    .content .normal {
+        font-size: 16px;
+    }
+    .content .list li {
+        font-size: 16px;
+    }
+}
 
 

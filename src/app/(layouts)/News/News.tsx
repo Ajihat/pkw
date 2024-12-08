@@ -9,8 +9,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import styles from './News.module.css';
 
+import { NewsTypes } from './News.types';
+
 // Definiowanie rozmiarów ekranów, aby wyświetlać 2 elementy
-export const News = () => {
+export const News = ({ setPopupData }: NewsTypes) => {
 	// Własne komponenty przycisków
 
 	const settings = {
@@ -49,7 +51,17 @@ export const News = () => {
 			<Slider {...settings} className='portfolioSlider'>
 				{newsData.map((item) => {
 					return (
-						<div key={item.id} className='item'>
+						<div
+							onClick={() =>
+								setPopupData({
+									imageSrc: item.imageSrc,
+									content: item.content,
+									header: item.header,
+								})
+							}
+							key={item.id}
+							className='item'
+						>
 							<div
 								className='img'
 								style={{

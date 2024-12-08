@@ -1,0 +1,62 @@
+.holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 10000;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-green);
+    opacity: 0.78;
+}
+.inner {
+    position: absolute;
+    top: 5%;
+    width: 75%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    opacity: 1;
+    border-radius: 17px;
+    padding: 135px 10%;
+    overflow-y: scroll;
+}
+
+.close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 999 / 579;
+    border-radius: 17px;
+    margin-bottom: 80px
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateX(0);
+        padding: 60px 10%;
+    }
+    .img {
+        margin-bottom: 40px;
+    }
+}
