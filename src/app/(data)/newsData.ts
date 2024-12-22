@@ -3,7 +3,7 @@ export const newsData = [
 		id: 1,
 		imageSrc: './news/news1.jpg',
 		header: 'Biogazownia - przyszłość OZE',
-		subHeader: 'Potrzebny subheader',
+		subHeader: 'Odpady zmieniane w energię',
 		content: `
 		<p class="bold">Czy wiesz, że odpady z Twojego gospodarstwa mogą stać się źródłem energii?
 Mikrobiogazownie to małe, sprytne instalacje, które przekształcają resztki jedzenia, obornik i
@@ -36,7 +36,7 @@ Mikrobiogazownie to przyszłość, która jest już dziś dostępna!</p>
 		id: 2,
 		imageSrc: './news/news2.jpg',
 		header: 'Worki z biogazem',
-		subHeader: 'Potrzebny subheader',
+		subHeader: 'Tania energia dla kryzysów i krajów rozwijających się',
 		content: `<p class="bold">Wyobrażacie sobie, że paliwo do kuchenki gazowej – biogaz- można kupować i
 transportować w… workach?
 Na tym właśnie polega nowa technologia, która powstała z myślą o doraźnej pomocy ofiarom
@@ -69,7 +69,7 @@ potrzeba skomplikowanej infrastruktury.</p>
 		id: 3,
 		imageSrc: './news/news3.jpg',
 		header: 'Agregaty Kogeneracyjne CHP',
-		subHeader: 'Potrzebny subheader',
+		subHeader: 'Efektywna produkcja energii i ciepła',
 		content: `
 			<p class="bold">W dobie rosnącego zapotrzebowania na zrównoważone i efektywne źródła energii, agregaty
 kogeneracyjne CHP (Combined Heat and Power) stają się coraz bardziej popularne. Te
@@ -123,7 +123,7 @@ poprawy efektywności energetycznej.</p>
 		id: 4,
 		imageSrc: './news/news4.jpg',
 		header: 'Magazyny energii',
-		subHeader: 'Potrzebny subheader',
+		subHeader: 'Klucz do zrównoważonej energii',
 		content: `
 		<p class="bold">W dzisiejszych czasach, gdy zrównoważony rozwój i efektywność energetyczna stają się
 coraz ważniejsze, magazyny energii odgrywają kluczową rolę w zarządzaniu zasobami
