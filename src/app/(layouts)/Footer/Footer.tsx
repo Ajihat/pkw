@@ -15,7 +15,9 @@ export const Footer = () => {
 						A może masz pytania dotyczące współpracy?
 						<br /> Jesteśmy tutaj, aby pomóc!
 					</p>
-					<WhiteButton text='NAPISZ DO NAS' width='200px' height='48px' />
+					<a href='mailto:biuro@grupapzw.com' className={styles.link}>
+						<WhiteButton text='NAPISZ DO NAS' width='200px' height='48px' />
+					</a>
 					<div className={styles.links}>
 						<p className={styles.contact}>Kontakt</p>
 						<a href='tel:+48571263242' className={styles.link}>

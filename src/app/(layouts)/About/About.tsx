@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import { WhiteButton } from '@/app/(components)/WhiteButton/WhiteButton';
 
+import { scrollToDiv } from '@/app/(utils)/navigate';
+
 import styles from './About.module.css';
 
 export const About = () => {
@@ -27,7 +29,12 @@ export const About = () => {
 						rozwój i ochronę środowiska. Dołącz do nas i odkryj, jak możemy wspólnie osiągnąć więcej!
 					</p>
 					<div className={styles.btnHolder}>
-						<WhiteButton width='240px' height='60px' text='POROZMAWIAJMY' />
+						<WhiteButton
+							onClick={() => scrollToDiv('footer')}
+							width='240px'
+							height='60px'
+							text='POROZMAWIAJMY'
+						/>
 					</div>
 				</div>
 			</div>

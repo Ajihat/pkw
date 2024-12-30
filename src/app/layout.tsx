@@ -47,6 +47,9 @@ export const metadata: Metadata = {
 		locale: 'pl_PL',
 		siteName: 'PKW Engineering',
 	},
+	alternates: {
+		canonical: 'https://pkw.vercel.app/', // Zamień na URL swojej witryny
+	},
 };
 
 export default function RootLayout({

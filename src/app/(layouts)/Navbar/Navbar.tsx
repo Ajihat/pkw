@@ -32,9 +32,9 @@ export const Navbar = () => {
 						<li onClick={() => scrollToDiv('offer')} className={styles.listItem}>
 							Oferta
 						</li>
-						<li onClick={() => scrollToDiv('portfolio')} className={styles.listItem}>
+						{/* <li onClick={() => scrollToDiv('portfolio')} className={styles.listItem}>
 							Portfolio
-						</li>
+						</li> */}
 						<li onClick={() => scrollToDiv('news')} className={styles.listItem}>
 							Aktualności
 						</li>

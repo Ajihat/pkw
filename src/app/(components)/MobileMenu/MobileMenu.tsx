@@ -18,9 +18,9 @@ export const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuTypes) => {
 						<li onClick={() => scrollToDiv('offer', setIsMenuOpen)} className={styles.menuLink}>
 							Oferta
 						</li>
-						<li onClick={() => scrollToDiv('portfolio', setIsMenuOpen)} className={styles.menuLink}>
+						{/* <li onClick={() => scrollToDiv('portfolio', setIsMenuOpen)} className={styles.menuLink}>
 							Portfolio
-						</li>
+						</li> */}
 						<li onClick={() => scrollToDiv('news', setIsMenuOpen)} className={styles.menuLink}>
 							Aktualności
 						</li>
