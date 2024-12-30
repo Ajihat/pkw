@@ -18,6 +18,35 @@ export const metadata: Metadata = {
 	title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
 	description:
 		'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, wspierając zrównoważony rozwój.',
+	keywords: [
+		'zaawansowane technologie przemysłowe',
+		'zarządzanie obiegiem wody',
+		'zarządzanie energią',
+		'agregaty kogeneracyjne',
+		'mikrobiogazownie',
+		'magazyny energii',
+		'odnawialne źródła energii',
+		'zrównoważony rozwój',
+		'ochrona środowiska',
+		'innowacyjne rozwiązania technologiczne',
+	],
+	openGraph: {
+		title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
+		description:
+			'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, wspierając zrównoważony rozwój.',
+		url: 'https://pkw.vercel.app/', //zmienic
+		type: 'website',
+		images: [
+			{
+				url: 'https://pkw.vercel.app/og-image.jpg', //zmienic
+				width: 1200,
+				height: 630,
+				alt: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
+			},
+		],
+		locale: 'pl_PL',
+		siteName: 'PKW Engineering',
+	},
 };
 
 export default function RootLayout({

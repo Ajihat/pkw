@@ -3,8 +3,6 @@ import styles from './MobileMenu.module.css';
 import { MobileMenuTypes } from './MobileMenu.types';
 
 import { FaFacebookF } from 'react-icons/fa6';
-import { LuInstagram } from 'react-icons/lu';
-import { FaYoutube } from 'react-icons/fa';
 
 import { scrollToDiv } from '@/app/(utils)/navigate';
 
@@ -43,14 +41,12 @@ export const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuTypes) => {
 					<p className={styles.link}>REGON: 386 485 774</p>
 				</div>
 				<div className={styles.socials}>
-					<a>
-						<FaFacebookF size={30} />
-					</a>
-					<a>
-						<LuInstagram size={30} />
-					</a>
-					<a>
-						<FaYoutube size={30} />
+					<a
+						className={styles.item}
+						href='https://www.facebook.com/profile.php?id=100091476144392'
+						target='_blank'
+					>
+						<FaFacebookF size={20} />
 					</a>
 				</div>
 			</div>

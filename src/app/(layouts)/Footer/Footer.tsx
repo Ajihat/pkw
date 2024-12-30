@@ -1,8 +1,6 @@
 import { WhiteButton } from '@/app/(components)/WhiteButton/WhiteButton';
 
 import { FaFacebookF } from 'react-icons/fa6';
-import { LuInstagram } from 'react-icons/lu';
-import { FaYoutube } from 'react-icons/fa';
 
 import styles from './Footer.module.css';
 
@@ -32,14 +30,12 @@ export const Footer = () => {
 					</div>
 					<div className={styles.bottom}>
 						<div className={styles.left}>
-							<a>
+							<a
+								className={styles.item}
+								href='https://www.facebook.com/profile.php?id=100091476144392'
+								target='_blank'
+							>
 								<FaFacebookF size={20} />
-							</a>
-							<a>
-								<LuInstagram size={20} />
-							</a>
-							<a>
-								<FaYoutube size={20} />
 							</a>
 						</div>
 						<div className={styles.right}>{`© ${currentYear} — All Rights Reserved`}</div>

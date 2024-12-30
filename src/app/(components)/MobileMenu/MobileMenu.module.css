@@ -70,6 +70,10 @@
     gap: 50px
 }
 
+.item {
+    color: var(--color-white);
+}
+
 @media (max-width: 690px) {
     .mobileMenu {
         padding: 0 30px 30px 30px;

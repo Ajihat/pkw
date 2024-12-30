@@ -92,6 +92,10 @@
     letter-spacing: .48px;
 }
 
+.item {
+    color: var(--white-color);
+}
+
 @media (max-width: 1024px) {
     .heading {
         font-size: 30px;
