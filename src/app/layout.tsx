@@ -50,6 +50,13 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://pkw.vercel.app/', // Zamień na URL swojej witryny
 	},
+	icons: {
+		icon: [
+			{ url: '/favicon.svg', type: 'image/svg+xml' }, // SVG favicon
+			{ url: '/favicon-192x192.svg', sizes: '192x192', type: 'image/svg+xml' }, // Ikona 192x192
+			{ url: '/favicon-512x512.svg', sizes: '512x512', type: 'image/svg+xml' }, // Ikona 512x512
+		],
+	},
 };
 
 export default function RootLayout({
