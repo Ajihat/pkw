@@ -16,7 +16,7 @@ export const Offer = () => {
 				<div className={styles.holder}>
 					<div className={styles.item}>
 						<div className={styles.left}>
-							<Image src='./offer1.svg' fill alt='Agregaty Kogeneracyjne Chp' className={styles.img} />
+							<Image src='/offer1.png' fill alt='Agregaty Kogeneracyjne Chp' className={styles.img} />
 						</div>
 						<div className={styles.right}>
 							<h4 className={styles.heading}>Agregaty Kogeneracyjne CHP</h4>
@@ -26,7 +26,7 @@ export const Offer = () => {
 					</div>
 					<div className={styles.item}>
 						<div className={styles.left}>
-							<Image src='./offer2.svg' fill alt='Mikorbiogazownia' className={styles.img} />
+							<Image src='/offer2.png' fill alt='Mikorbiogazownia' className={styles.img} />
 						</div>
 						<div className={styles.right}>
 							<h4 className={styles.heading}>Mikrobiogazownia</h4>
@@ -37,7 +37,7 @@ export const Offer = () => {
 					<div className={styles.item}>
 						<div className={styles.left}>
 							<Image
-								src='./offer3.svg'
+								src='/offer3.png'
 								fill
 								alt='Magazyny Energii Elektroenergetycznej'
 								className={styles.img}
@@ -51,7 +51,7 @@ export const Offer = () => {
 					</div>
 					<div className={styles.item}>
 						<div className={styles.left}>
-							<Image src='./offer4.svg' fill alt='Magazyny Wody Opadowej' className={styles.img} />
+							<Image src='/offer4.png' fill alt='Magazyny Wody Opadowej' className={styles.img} />
 						</div>
 						<div className={styles.right}>
 							<h4 className={styles.heading}>Magazyny Wody Opadowej</h4>
