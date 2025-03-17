@@ -51,7 +51,7 @@ export const Brands = () => {
 					{brandsData.map((item) => {
 						return (
 							<div key={item.id} className='item'>
-								<img src={item.imageSrc} alt={item.alt} />
+								<img src={item.imageSrc} alt={item.alt} className='image' />
 							</div>
 						);
 					})}
