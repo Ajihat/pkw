@@ -155,4 +155,36 @@ prowadzić do oszczędności.</li>
 </ul>
 		`,
 	},
+	{
+		id: 5,
+		imageSrc: './news/news5.jpg',
+		header: 'Technologia oczyszczania biogazu',
+		subHeader: '',
+		content: `
+		`,
+	},
+	{
+		id: 6,
+		imageSrc: './news/news6.jpg',
+		header: 'Oczyszczanie pofermentu do wody technologicznej',
+		subHeader: '',
+		content: `
+		`,
+	},
+	{
+		id: 7,
+		imageSrc: './news/news7.jpg',
+		header: 'Inteligentny system zarządzania energią',
+		subHeader: '',
+		content: `
+		`,
+	},
+	{
+		id: 8,
+		imageSrc: './news/news8.jpg',
+		header: 'Współpraca z Ośrodkami Naukowymi',
+		subHeader: '',
+		content: `
+		`,
+	},
 ];
