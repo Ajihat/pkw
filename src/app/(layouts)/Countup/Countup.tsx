@@ -14,28 +14,26 @@ export const Countup = () => {
 	});
 	return (
 		<div className={styles.container}>
-			<Heading
-				paragraphText='Lorem ipso dolor im semit lorem tu'
-				headingText='Lorem ipso dolor im semit lorem tu'
-			/>
+			<Heading paragraphText='PKW Engineering' headingText='Innowacje z siłą GRUPY PZW' />
 			<div className={styles.wrapper} ref={ref}>
 				{inView && (
 					<div className={styles.inner}>
 						<div className={styles.item}>
 							<div>
 								<div className={styles.counter}>
-									<CountUp start={0} end={16} duration={3.75} />K
+									<CountUp start={0} end={40} duration={3.75} />
+									lat
 								</div>
-								<p className={styles.text}>Text here</p>
+								<p className={styles.text}>doświadczenia na rynku</p>
 							</div>
 						</div>
 						<div className={styles.line}></div>
 						<div className={styles.item}>
 							<div>
 								<div className={styles.counter}>
-									<CountUp start={0} end={189} duration={3.75} />+
+									<CountUp start={0} end={1000} duration={3.75} />+
 								</div>
-								<p className={styles.text}>Text here</p>
+								<p className={styles.text}>zrealizowanych projektów</p>
 							</div>
 						</div>
 						<div className={styles.line}></div>
@@ -44,7 +42,7 @@ export const Countup = () => {
 								<div className={styles.counter}>
 									<CountUp start={0} end={100} duration={3.75} />%
 								</div>
-								<p className={styles.text}>Text here</p>
+								<p className={styles.text}>zadowolonych klientów</p>
 							</div>
 						</div>
 					</div>
