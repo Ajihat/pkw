@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './MobileMenu.module.css';
 
 import { MobileMenuTypes } from './MobileMenu.types';
@@ -47,6 +48,9 @@ export const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuTypes) => {
 						target='_blank'
 					>
 						<FaFacebookF size={20} />
+					</a>
+					<a className={styles.item} href='https://grupapzw.com/' target='_blank'>
+						<Image width={60} height={30} src='/logo_pzw.png' alt='Grupa PZW' />
 					</a>
 				</div>
 			</div>

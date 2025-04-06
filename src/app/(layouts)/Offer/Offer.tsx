@@ -61,6 +61,16 @@ export const Offer = () => {
 						</div>
 						<Plus />
 					</div>
+					<div className={styles.item}>
+						<div className={styles.left}>
+							<Image src='/offer5.png' fill alt='System szybkiego ładowania' className={styles.img} />
+						</div>
+						<div className={styles.right}>
+							<h4 className={styles.heading}>System szybkiego ładowania</h4>
+							<p className={styles.text}>do pojazdów elektrycznych</p>
+						</div>
+						<Plus />
+					</div>
 				</div>
 			</div>
 		</div>
