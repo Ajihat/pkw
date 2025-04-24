@@ -241,7 +241,8 @@ html, body {
 
 .brandsSlider .image {
     display: block;
-    width: 45%
+    width: 45%;
+    min-width: 135px;
 }
 
 /* Usuwanie wbudowanego contentu Slick */

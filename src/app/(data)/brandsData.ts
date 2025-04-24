@@ -1,32 +1,32 @@
 export const brandsData = [
 	{
 		id: 1,
-		imageSrc: './brands/brand1.svg',
+		imageSrc: './brands/brand1.png',
 		alt: 'Logo firmy',
 	},
 	{
 		id: 2,
-		imageSrc: './brands/brand2.svg',
+		imageSrc: './brands/brand2.png',
 		alt: 'Logo firmy',
 	},
 	{
 		id: 3,
-		imageSrc: './brands/brand3.svg',
+		imageSrc: './brands/brand3.png',
 		alt: 'Logo firmy',
 	},
 	{
 		id: 4,
-		imageSrc: './brands/brand4.svg',
+		imageSrc: './brands/brand4.png',
 		alt: 'Logo firmy',
 	},
 	{
 		id: 5,
-		imageSrc: './brands/brand5.svg',
+		imageSrc: './brands/brand5.png',
 		alt: 'Logo firmy',
 	},
 	{
 		id: 6,
-		imageSrc: './brands/brand6.svg',
+		imageSrc: './brands/brand6.png',
 		alt: 'Logo firmy',
 	},
 	{

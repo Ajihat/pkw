@@ -1,11 +1,17 @@
-import { HiPlus } from 'react-icons/hi';
+import { HiPlus, HiMinus } from 'react-icons/hi';
 
 import styles from './Plus.module.css';
 
-export const Plus = () => {
+import { PlusTypes } from './Plus.types';
+
+export const Plus = ({ isOpen, onClick }: PlusTypes) => {
 	return (
-		<div className={styles.wrapper}>
-			<HiPlus size={30} style={{ color: 'white' }} />
+		<div onClick={onClick} className={styles.wrapper}>
+			{isOpen ? (
+				<HiMinus size={30} style={{ color: 'white' }} />
+			) : (
+				<HiPlus size={30} style={{ color: 'white' }} />
+			)}
 		</div>
 	);
 };
