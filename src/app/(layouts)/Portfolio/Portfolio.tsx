@@ -47,7 +47,7 @@ export const Portfolio = () => {
 								<p className='text'>{item.date}</p>
 								<h3 className='details'>{item.header}</h3>
 							</div>
-							<Plus />
+							<Plus isOpen={true} />
 						</div>
 					);
 				})}
