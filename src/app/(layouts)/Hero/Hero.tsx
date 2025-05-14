@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { WhiteButton } from '@/app/(components)/WhiteButton/WhiteButton';
 
 import { scrollToDiv } from '@/app/(utils)/navigate';
@@ -23,7 +21,7 @@ export const Hero = () => {
 					<WhiteButton onClick={() => scrollToDiv('offer')} width='300px' height='60px' text='OFERTA' />
 				</div>
 				<div className={styles.right}>
-					<Image fill src='/hero.png' alt='Energia odnawialna' className={styles.image} />
+					<img src='/hero.png' alt='Energia odnawialna' className={styles.image} />
 				</div>
 			</div>
 		</div>

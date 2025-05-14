@@ -15,7 +15,7 @@
 }
 .right {
     position: relative;
-    
+    bottom: 100px;
     left: 80px;
         width: 43%;
 }
@@ -49,12 +49,13 @@
     max-width: 550px;
     margin-bottom: 45px;
 }
-
 .image {
-    object-fit: contain;
-  transform: scale(1.7);
-  transform-origin: center;
+    display: block;
+    width: 100%;
+    transform: scale(1.2);
 }
+
+
 
 @media (max-width: 1800px) {
     .secondHeading {
@@ -64,8 +65,11 @@
     .mainHeading {
         font-size: 30px;
     }
+    .right {
+        bottom: 0px;
+    }
     .image {
-        transform: scale(1.6);
+        transform: scale(1.55);
     }
     .wrapper {
         padding-top: 100px;
@@ -75,7 +79,7 @@
 @media (max-width: 1300px) { /* Wartość breakpointu wpisana ręcznie */
 
    .image {
-    transform: scale(1.4);
+    /* transform: scale(1.4); */
 }
 .mainHeading {
     font-size: 30px;
@@ -98,13 +102,17 @@
     .right {
         left: 0px;
         width: 100%;
-        height: 420px;
+        height: 400px;
         order: 1;
         bottom: 10px;
+        margin-top: 40px;
     }
 
     .image {
-        transform: scale(1.4);
+        transform: scale(1.3);
+        width: 50%;
+        margin: 0 auto;
+        min-width: 400px
     }
     .mainHeading {
         font-size: 20px;
@@ -119,4 +127,17 @@
         line-height: 30px;
     }
 }
+
+@media (max-width: 500px) {
+    .image {
+        min-width: 300px
+    }
+
+    .right {
+        height: 320px;
+    }
+}
+
+
+
 

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { WhiteButton } from '@/app/(components)/WhiteButton/WhiteButton';
 
 import { FaFacebookF } from 'react-icons/fa6';
@@ -41,7 +40,7 @@ export const Footer = () => {
 								<FaFacebookF size={20} />
 							</a>
 							<a className={styles.item} href='https://grupapzw.com/' target='_blank'>
-								<Image width={60} height={30} src='/logo_pzw.png' alt='Grupa PZW' />
+								<img src='/logo_pzw.png' alt='Grupa PZW' className={styles.pzw} />
 							</a>
 						</div>
 						<div className={styles.right}>{`© ${currentYear} — All Rights Reserved`}</div>

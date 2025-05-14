@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
 
 import { Heading } from '@/app/(components)/Heading/Heading';
@@ -31,12 +30,7 @@ export const Offer = () => {
 						<div className={styles.item}>
 							<div className={styles.content}>
 								<div className={styles.left}>
-									<Image
-										src='/offer1.png'
-										fill
-										alt='Agregaty Kogeneracyjne Chp'
-										className={styles.img}
-									/>
+									<img src='/offer1.png' alt='Agregaty Kogeneracyjne Chp' className={styles.img} />
 								</div>
 								<div className={styles.right}>
 									<h4 className={styles.heading}>Agregaty Kogeneracyjne CHP</h4>
@@ -60,7 +54,7 @@ export const Offer = () => {
 						<div className={styles.item}>
 							<div className={styles.content}>
 								<div className={styles.left}>
-									<Image src='/offer2.png' fill alt='Mikorbiogazownia' className={styles.img} />
+									<img src='/offer2.png' alt='Mikorbiogazownia' className={styles.img} />
 								</div>
 								<div className={styles.right}>
 									<h4 className={styles.heading}>Mikrobiogazownia</h4>
@@ -84,9 +78,8 @@ export const Offer = () => {
 						<div className={styles.item}>
 							<div className={styles.content}>
 								<div className={styles.left}>
-									<Image
+									<img
 										src='/offer3.png'
-										fill
 										alt='Magazyny Energii Elektroenergetycznej'
 										className={styles.img}
 									/>
@@ -120,7 +113,7 @@ export const Offer = () => {
 						<div className={styles.item}>
 							<div className={styles.content}>
 								<div className={styles.left}>
-									<Image src='/offer4.png' fill alt='Magazyny Wody Opadowej' className={styles.img} />
+									<img src='/offer4.png' alt='Magazyny Wody Opadowej' className={styles.img} />
 								</div>
 								<div className={styles.right}>
 									<h4 className={styles.heading}>Magazyny Wody Opadowej</h4>
@@ -151,12 +144,7 @@ export const Offer = () => {
 						<div className={styles.item}>
 							<div className={styles.content}>
 								<div className={styles.left}>
-									<Image
-										src='/offer5.png'
-										fill
-										alt='System szybkiego ładowania'
-										className={styles.img}
-									/>
+									<img src='/offer5.png' alt='System szybkiego ładowania' className={styles.img} />
 								</div>
 								<div className={styles.right}>
 									<h4 className={styles.heading}>System szybkiego ładowania</h4>

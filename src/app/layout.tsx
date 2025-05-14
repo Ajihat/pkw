@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { headers } from 'next/headers';
 import { Poppins, Roboto } from 'next/font/google';
 import './globals.css';
 
@@ -15,36 +14,50 @@ const roboto = Roboto({
 	variable: '--font-roboto',
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-	const headersList = await headers();
-	const host = headersList.get('host');
-	const protocol = host?.includes('localhost') ? 'http' : 'https';
-	const baseUrl = `${protocol}://${host}`;
-
-	return {
+export const metadata: Metadata = {
+	title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
+	description:
+		'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, wspierając zrównoważony rozwój.',
+	keywords: [
+		'zaawansowane technologie przemysłowe',
+		'zarządzanie obiegiem wody',
+		'zarządzanie energią',
+		'agregaty kogeneracyjne',
+		'mikrobiogazownie',
+		'magazyny energii',
+		'odnawialne źródła energii',
+		'zrównoważony rozwój',
+		'ochrona środowiska',
+		'innowacyjne rozwiązania technologiczne',
+	],
+	openGraph: {
 		title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
-		description: 'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu.',
-		openGraph: {
-			title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
-			description: 'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu.',
-			url: baseUrl,
-			type: 'website',
-			images: [
-				{
-					url: `${baseUrl}/og-image.jpg`,
-					width: 1200,
-					height: 630,
-					alt: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
-				},
-			],
-			locale: 'pl_PL',
-			siteName: 'PKW Engineering',
-		},
-		alternates: {
-			canonical: baseUrl,
-		},
-	};
-}
+		description:
+			'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, wspierając zrównoważony rozwój.',
+		url: 'https://pkw.vercel.app/', //zmienic
+		type: 'website',
+		images: [
+			{
+				url: 'https://pkw.vercel.app/og-image.jpg', //zmienic
+				width: 1200,
+				height: 630,
+				alt: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
+			},
+		],
+		locale: 'pl_PL',
+		siteName: 'PKW Engineering',
+	},
+	alternates: {
+		canonical: 'https://pkw.vercel.app/', // Zamień na URL swojej witryny
+	},
+	icons: {
+		icon: [
+			{ url: '/favicon.svg', type: 'image/svg+xml' }, // SVG favicon
+			{ url: '/favicon-192x192.svg', sizes: '192x192', type: 'image/svg+xml' }, // Ikona 192x192
+			{ url: '/favicon-512x512.svg', sizes: '512x512', type: 'image/svg+xml' }, // Ikona 512x512
+		],
+	},
+};
 
 export default function RootLayout({
 	children,

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { WhiteButton } from '@/app/(components)/WhiteButton/WhiteButton';
 
 import { scrollToDiv } from '@/app/(utils)/navigate';
@@ -11,7 +9,7 @@ export const About = () => {
 		<div className={styles.wrapper} id='about'>
 			<div className={styles.inner}>
 				<div className={styles.left}>
-					<Image fill src='/ecology.png' alt='Ekologia' className={styles.image} />
+					<img src='/ecology.png' alt='Ekologia' className={styles.image} />
 				</div>
 				<div className={styles.right}>
 					<h2 className={styles.heading}>O nas</h2>

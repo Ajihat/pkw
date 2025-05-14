@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 import { TransparentButton } from '@/app/(components)/TransparentButton/TransparentButton';
 import { MobileMenu } from '@/app/(components)/MobileMenu/MobileMenu';
@@ -22,7 +21,7 @@ export const Navbar = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.inner}>
 				<div className={styles.logoWrapper}>
-					<Image src='/logo.svg' layout='responsive' width={251} height={96} alt='PKW logo' />
+					<img src='/logo.svg' alt='PKW logo' />
 				</div>
 				<nav className={styles.nav}>
 					<ul className={styles.list}>

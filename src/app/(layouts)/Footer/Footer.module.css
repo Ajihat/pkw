@@ -96,6 +96,11 @@
     color: var(--white-color);
 }
 
+.pzw {
+    display: block;
+    width: 85px
+}
+
 @media (max-width: 1024px) {
     .heading {
         font-size: 30px;
