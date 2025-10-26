@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //layouts
 import { Navbar } from './(layouts)/Navbar/Navbar';
@@ -20,22 +20,38 @@ import { PopupData } from './(components)/Popup/Popup.types';
 
 export default function Home() {
 	const [popupData, setPopupData] = useState<null | PopupData>(null);
+	const [lang, setLang] = useState<'pl' | 'en'>('pl');
+
+	useEffect(() => {
+		try {
+			const userLang = navigator.language || navigator.languages[0];
+			const language = userLang.split('-')[0];
+			if (language === 'pl') {
+				setLang('pl');
+			} else {
+				setLang('en');
+			}
+		} catch {
+			setLang('pl');
+		}
+	}, []);
+
 	return (
 		<main>
-			<Navbar />
+			<Navbar lang={lang} setLang={setLang} />
 			<MainWrapper>
 				<ContentWrapper>
-					<Hero />
-					<Brands />
-					<Countup />
-					<About />
-					<Offer />
+					<Hero lang={lang} />
+					<Brands lang={lang} />
+					<Countup lang={lang} />
+					<About lang={lang} />
+					<Offer lang={lang} />
 					{/* <Portfolio /> */}
-					<News setPopupData={setPopupData} />
+					<News setPopupData={setPopupData} lang={lang} />
 				</ContentWrapper>
 			</MainWrapper>
 			<Popup popupData={popupData} setPopupData={setPopupData} />
-			<Footer />
+			<Footer lang={lang} />
 		</main>
 	);
 }

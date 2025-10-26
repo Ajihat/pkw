@@ -1,8 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
 
-export interface MobileMenuTypes {
-	isMenuOpen: boolean;
-	setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
+export interface NavbarTypes {
 	lang: 'pl' | 'en';
 	setLang: Dispatch<SetStateAction<'pl' | 'en'>>;
 }

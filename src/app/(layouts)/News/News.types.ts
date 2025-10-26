@@ -4,4 +4,5 @@ import { PopupData } from '@/app/(components)/Popup/Popup.types';
 
 export interface NewsTypes {
 	setPopupData: Dispatch<SetStateAction<null | PopupData>>;
+	lang: 'pl' | 'en';
 }

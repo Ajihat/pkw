@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid var(--white-color);
+    border-radius: 45px;
+    width: 130px;
+}
+
+.box {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 45px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.active {
+    background-color: var(--white-color);
+    color:var(--dark-green)
+}

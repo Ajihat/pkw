@@ -11,8 +11,19 @@ import styles from './News.module.css';
 
 import { NewsTypes } from './News.types';
 
+const TEXTS = {
+	HEADER: {
+		pl: 'Nasze ostatnie realizacje',
+		en: 'Our Latest Projects',
+	},
+	SUBHEADER: {
+		pl: 'Aktualności',
+		en: 'News & Updates',
+	},
+};
+
 // Definiowanie rozmiarów ekranów, aby wyświetlać 2 elementy
-export const News = ({ setPopupData }: NewsTypes) => {
+export const News = ({ setPopupData, lang }: NewsTypes) => {
 	// Własne komponenty przycisków
 
 	const settings = {
@@ -47,7 +58,7 @@ export const News = ({ setPopupData }: NewsTypes) => {
 	};
 	return (
 		<div className={styles.sliderContainer} id='news'>
-			<Heading paragraphText='Nasze ostatnie realizacje' headingText='Aktualności' />
+			<Heading paragraphText={TEXTS.HEADER[lang]} headingText={TEXTS.SUBHEADER[lang]} />
 			<Slider {...settings} className='portfolioSlider'>
 				{newsData.map((item) => {
 					return (
@@ -55,8 +66,8 @@ export const News = ({ setPopupData }: NewsTypes) => {
 							onClick={() =>
 								setPopupData({
 									imageSrc: item.imageSrc,
-									content: item.content,
-									header: item.header,
+									content: item.content[lang],
+									header: item.header[lang],
 								})
 							}
 							key={item.id}
@@ -69,8 +80,8 @@ export const News = ({ setPopupData }: NewsTypes) => {
 								}}
 							></div>
 							<div className='content'>
-								<p className='text'>{item.header}</p>
-								<h3 className='details'>{item.subHeader}</h3>
+								<p className='text'>{item.header[lang]}</p>
+								<h3 className='details'>{item.subHeader[lang]}</h3>
 							</div>
 						</div>
 					);

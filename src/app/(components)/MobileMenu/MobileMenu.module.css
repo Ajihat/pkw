@@ -78,6 +78,9 @@
     display: block;
     width: 85px
 }
+.nav {
+    margin-top: 15px;
+}
 
 @media (max-width: 690px) {
     .mobileMenu {

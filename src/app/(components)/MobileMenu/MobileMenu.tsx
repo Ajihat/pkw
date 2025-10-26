@@ -1,35 +1,57 @@
 import styles from './MobileMenu.module.css';
 
+import { LangSwitchBtn } from '../LangSwitchBtn/LangSwitchBtn';
+
 import { MobileMenuTypes } from './MobileMenu.types';
 
 import { FaFacebookF } from 'react-icons/fa6';
 
 import { scrollToDiv } from '@/app/(utils)/navigate';
 
-export const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuTypes) => {
+const TEXTS = {
+	ABOUT: {
+		pl: 'O firmie',
+		en: 'About Us',
+	},
+	OFFER: {
+		pl: 'Oferta',
+		en: 'Offer',
+	},
+	NEWS: {
+		pl: 'Aktualności',
+		en: 'News',
+	},
+	CONTACT: {
+		pl: 'Kontakt',
+		en: 'Contact',
+	},
+};
+
+export const MobileMenu = ({ isMenuOpen, setIsMenuOpen, lang, setLang }: MobileMenuTypes) => {
 	return (
 		<div className={`${styles.mobileMenu} ${isMenuOpen ? styles.menuOpen : styles.menuClosed}`}>
 			<div className={styles.top}>
+				<LangSwitchBtn lang={lang} setLang={setLang} />
 				<nav className={styles.nav}>
 					<ul className={styles.list}>
 						<li onClick={() => scrollToDiv('about', setIsMenuOpen)} className={styles.menuLink}>
-							O firmie
+							{TEXTS.ABOUT[lang]}
 						</li>
 						<li onClick={() => scrollToDiv('offer', setIsMenuOpen)} className={styles.menuLink}>
-							Oferta
+							{TEXTS.OFFER[lang]}
 						</li>
 						{/* <li onClick={() => scrollToDiv('portfolio', setIsMenuOpen)} className={styles.menuLink}>
 							Portfolio
 						</li> */}
 						<li onClick={() => scrollToDiv('news', setIsMenuOpen)} className={styles.menuLink}>
-							Aktualności
+							{TEXTS.NEWS[lang]}
 						</li>
 					</ul>
 				</nav>
 			</div>
 			<div className={styles.bottom}>
 				<div className={styles.contact}>
-					<p className={styles.head}>Kontakt</p>
+					<p className={styles.head}>{TEXTS.CONTACT[lang]}</p>
 					<a href='tel:+48571263242' className={styles.link}>
 						Tel: +48 571 263 242
 					</a>

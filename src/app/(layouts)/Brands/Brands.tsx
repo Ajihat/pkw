@@ -7,9 +7,22 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { brandsData } from '@/app/(data)/brandsData';
 
+import { BrandsTypes } from './Brands.types';
+
 import styles from './Brands.module.css';
 
-export const Brands = () => {
+const TEXTS = {
+	FIRST: {
+		pl: 'Stawiamy na partnerskie relacje',
+		en: 'We believe in workingtogether as partners, not just service providers',
+	},
+	SECOND: {
+		pl: 'Zaufanie i klarowne zasady współpracy',
+		en: 'Trust and clear cooperation principles',
+	},
+};
+
+export const Brands = ({ lang }: BrandsTypes) => {
 	const settings = {
 		infinite: true,
 		speed: 500,
@@ -42,10 +55,7 @@ export const Brands = () => {
 	};
 	return (
 		<div className={styles.sliderContainer}>
-			<Heading
-				paragraphText='Stawiamy na partnerskie relacje'
-				headingText='Zaufanie i klarowne zasady współpracy'
-			/>
+			<Heading paragraphText={TEXTS.FIRST[lang]} headingText={TEXTS.SECOND[lang]} />
 			<div className={styles.inner}>
 				<Slider {...settings} className='brandsSlider'>
 					{brandsData.map((item) => {

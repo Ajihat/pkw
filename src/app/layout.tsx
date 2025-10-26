@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 		title: 'PKW Engineering - Zaawansowane Technologie Przemysłowe',
 		description:
 			'Profesjonalne i innowacyjne rozwiązania technologiczne dla przemysłu. Specjalizujemy się w zarządzaniu obiegiem wody i energii, wspierając zrównoważony rozwój.',
-		url: 'https://pkw.vercel.app/', //zmienic
+		url: 'https://pkwengineering.grupapzw.com/', //zmienic
 		type: 'website',
 		images: [
 			{
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 		siteName: 'PKW Engineering',
 	},
 	alternates: {
-		canonical: 'https://pkw.vercel.app/', // Zamień na URL swojej witryny
+		canonical: 'https://pkwengineering.grupapzw.com/', // Zamień na URL swojej witryny
 	},
 	icons: {
 		icon: [
